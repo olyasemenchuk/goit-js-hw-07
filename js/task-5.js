@@ -5,6 +5,7 @@ const backgroundColor = document.querySelector("body");
 const backgroundSpan = document.querySelector(".color")
 function changeColor(event) {
   backgroundColor.style.backgroundColor = getRandomHexColor();
+  backgroundSpan.textContent = getRandomHexColor();
 }
   
 function getRandomHexColor() {
@@ -13,4 +14,3 @@ function getRandomHexColor() {
     .padStart(6, 0)}`;
 }
 
-backgroundSpan.innerHTML = getRandomHexColor();
