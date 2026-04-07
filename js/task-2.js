@@ -45,6 +45,5 @@ function galleryMarkup(arr) {
 gallery.style.display = "flex";
 gallery.style.flexWrap = "wrap";
 gallery.style.gap = "24px";
-gallery.style.listStyle = "none"
 
 gallery.insertAdjacentHTML ("beforeend", galleryMarkup(images));
